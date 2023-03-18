@@ -1,0 +1,202 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedorr{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(35deg,rgba(0, 0, 255, 0.8),rgb(0, 255, 255,.9),rgb(0, 0,255,.8)),url('imagenes/images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* animation: ani infinite linear 5s; */
+}
+.cajon{
+    width:420px;
+    /* border:solid red 1px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+.cajon p{
+    position: relative;
+    width:100%;
+    text-align: center;
+    /* position: absolute; */
+    /* top:10px; */
+    padding: 5px 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    background:linear-gradient( grey,rgb(90, 90, 90),grey);
+    margin-bottom: 0;
+}
+.cajon p span{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display:flex;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    /* border:solid black 1px; */
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+.cajon p span img{
+    width:200%;
+    height: 140%;
+}
+.caja{
+    /* border:solid black 1px; */
+    background: linear-gradient(-30deg,rgb(64, 64, 64),white,rgb(64, 64, 64));
+    box-shadow: 0 0 10px 4px rgb(255, 255, 255) inset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:100%;
+    padding: 5px;
+}
+.pantallas{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(134, 255, 154);
+    box-shadow: 0 0 5px 3px green inset;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+.pantalla_uno,.pantalla_dos,.pantalla_tres{
+    width:48%;
+    /* background-color: antiquewhite; */
+    background: transparent;
+
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Quantico";
+
+}
+.pantalla_uno,.pantalla_dos{
+    background-color: rgb(240, 248, 255,.8);
+}
+.pantalla_tres{
+    width:100%;
+    margin: 5px auto;
+    line-height: 40px;
+    border: none;
+    font-size: 50px;
+}
+.reloj{
+    width:50%;
+    /* border: solid black 1px; */
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Quantico";
+    /* background: rgb(0, 255, 0,.5); */
+    background: rgb(134, 255, 154);
+
+    box-shadow: 0 0 5px 3px green inset;
+}
+.fechas{
+    width:100%;
+    /* border: solid blue 1px; */
+    display: flex;
+    justify-content: space-around;
+    margin: 1px auto;
+}
+.hora{
+    width:70%;
+    /* border: solid black 1px; */
+    margin:-10px auto;
+    padding: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.segundos{
+    width:20%;
+    /* border:solid red 1px; */
+    margin: auto;
+    font-size: 25px;
+}
+.anio{
+    width:90%;
+    /* border: solid blue 1px; */
+    margin: auto;
+    margin-bottom: 5px;
+}
+.barra{
+    width:95%;
+    height: 30px;
+    background: linear-gradient(rgb(0, 0, 255,.5),rgb(255, 255, 255,.8),rgb(0, 0, 255,.5));
+    margin: 10px auto;
+    /* border-radius: 2px; */
+    text-align: center;
+    line-height: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px white;
+    /* font-family: "Quantico"; */
+
+}
+.botones{
+    width:100%;
+   margin-top:40px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: linear-gradient(grey,white,grey);
+   padding: 20px 0;
+}
+.botones button{
+    width:50px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    line-height: 20px;
+    border-radius: 5px;
+    background: rgb(142, 168, 251);
+    /* color: white; */
+    box-shadow: 0 0 4px 3px rgb(0, 0, 158) inset;
+    cursor: pointer;
+}
+.clear{
+    background-color: rgb(251, 97, 97) !important;
+    box-shadow: 0 0 4px 3px red inset !important;
+    width:65px !important
+}
+@media(max-width:567px){
+    .pantalla_tres{
+        font-size: 26px;
+    }
+    .pantalla_dos,.pantalla_uno{
+        font-size: 20px;
+    }
+    .hora{
+        font-size: 22px;
+        margin: 0;
+    }
+    .segundos{
+        font-size: 18px;
+    }
+    .cajon p span{
+        right: 0;
+    }
+}
